@@ -1,4 +1,4 @@
-# Instagram Clone (v2)
+# Instagram Clone (v2) - **React 19**, **TypeScript**, **Vite**, and **Tailwind CSS v4**
 
 A modern Instagram Clone built with **React 19**, **TypeScript**, **Vite**, and **Tailwind CSS v4**.  
 This version transitions from the original Scrimba build to a scalable, production-ready setup.
