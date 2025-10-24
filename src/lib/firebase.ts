@@ -1,7 +1,7 @@
 //import { seedDatabase } from '../seed';
 // Import the files you need from firebase to initialize firebase, add auth, and use firebase & firestore(db)
 import { initializeApp } from 'firebase/app'
-import { getAuth } from 'firebase/auth';
+import { getAuth } from '.firebase/auth';
 import { getFirestore, serverTimestamp } from 'firebase/firestore' //serverTimestamp will be used for the createdAt field in the post document
 
 // Import API key and project identifiers from .env file
