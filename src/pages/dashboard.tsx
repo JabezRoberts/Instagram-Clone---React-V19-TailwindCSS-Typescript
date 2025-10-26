@@ -1,9 +1,10 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import Header from '../components/header.js';
 import Timeline from '../components/timeline.js';
 import Sidebar from '../components/sidebar/index.js';
+import type { DashboardPage } from '../types/pages';
 
-export default function Dashboard() {
+const Dashboard: DashboardPage = () => {
     useEffect(() => {
         document.title = 'Instagram';
     }, []);
@@ -11,10 +12,13 @@ export default function Dashboard() {
     return (
         <div className="bg-gray-background">
             <Header />
-            <div className="grid grid-cols-3 gap-4 justify-between mx-auto max-w-screen-lg">
+            <div className="grid grid-cols-3 gap-4 justify-between mx-auto max-w-5xl">
                 <Timeline />
                 <Sidebar />
             </div>
         </div>
     )
 }
+
+
+export default Dashboard;

@@ -1,9 +1,10 @@
-import React, { useState, useEffect, useContext } from 'react';
+import { useState, useEffect, useContext } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import FirebaseContext from '../context/firebase';
 import * as ROUTES from '../constants/routes';
+import type { LoginPage } from '../types/pages.js'
 
-export default function Login() {
+const Login: LoginPage = () => {
     const history = useHistory();
     const { firebase } = useContext(FirebaseContext);
     
@@ -79,3 +80,5 @@ export default function Login() {
         </div>
     )
 }
+
+export default Login;

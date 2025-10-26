@@ -4,8 +4,9 @@ import Header from '../components/header.js';
 import UserProfile from '../components/profile/index.js';
 import { getUserByUsername } from '../services/firebase.js';
 import * as ROUTES from '../constants/routes.js';
+import type { ProfilePage }  from '../types/pages.js';
 
-export default function Profile() {
+const Profile: ProfilePage = () => {
     const { username } = useParams();
     const [userExists, setUserExists] = useState(undefined);
     const history = useHistory();
@@ -31,3 +32,5 @@ export default function Profile() {
         </div>
     ) : null;
 }
+
+export default Profile;

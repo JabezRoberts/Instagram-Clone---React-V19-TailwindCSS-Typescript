@@ -1,7 +1,8 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import Header from '../components/header.js';
+import type { NotFoundPage } from '../types/pages'
 
-export default function NotFound() {
+const NotFound: NotFoundPage = () => {
     useEffect(() => {
         document.title = '404 - Not Found';
     }, []);
@@ -15,3 +16,5 @@ export default function NotFound() {
         </div>
     )
 }
+
+export default NotFound;

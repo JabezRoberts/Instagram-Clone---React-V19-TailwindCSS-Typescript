@@ -3,8 +3,9 @@ import { useHistory, Link } from 'react-router-dom';
 import FirebaseContext from '../context/firebase';
 import * as ROUTES from '../constants/routes';
 import { doesUsernameExist } from '../services/firebase';
+import type { SignupPage } from '../types/pages'
 
-export default function SignUp() {
+const SignUp: SignupPage = () => {
     const history = useHistory();
     const { firebase } = useContext(FirebaseContext);
     
@@ -117,3 +118,5 @@ export default function SignUp() {
         </div>
     )
 }
+
+export default Signup;
